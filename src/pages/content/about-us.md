@@ -1,5 +1,6 @@
 ---
 templateKey: page-content
+banner: /img/about-us.png
 title: About Us
 description: "PS 770, is an elementary school located in District 17 comprised of grades Pre-K through 5th grade.  We are located in the Crown Heights section of Brooklyn. \uFEFF Our mission statement is “to empower learners and inspire leaders to make this a better world.” \uFEFF "
 date: '2018-07-24T23:10:51-04:00'
