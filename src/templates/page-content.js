@@ -9,6 +9,7 @@ export const BlogPostTemplate = ({
   content,
   contentComponent,
   description,
+  banner,
   title,
   helmet,
 }) => {
@@ -20,6 +21,7 @@ export const BlogPostTemplate = ({
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
+            <img src={banner} />
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
@@ -37,6 +39,7 @@ BlogPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
+  banner: PropTypes.string,
   helmet: PropTypes.instanceOf(Helmet),
 }
 
@@ -48,7 +51,7 @@ const BlogPost = ({ data }) => {
       content={post.html}
       contentComponent={HTMLContent}
       description={post.frontmatter.description}
-      helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
+      helmet={<Helmet title={post.frontmatter.title} />}
       title={post.frontmatter.title}
     />
   )
