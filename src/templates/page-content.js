@@ -53,6 +53,7 @@ const BlogPost = ({ data }) => {
       description={post.frontmatter.description}
       helmet={<Helmet title={post.frontmatter.title} />}
       title={post.frontmatter.title}
+      banner={post.frontmatter.banner}
     />
   )
 }
@@ -72,6 +73,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
+        banner
         title
         description
       }
