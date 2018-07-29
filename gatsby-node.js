@@ -83,3 +83,8 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     })
   }
 }
+
+exports.modifyWebpackConfig = ({config, stage}) => {
+  config.merge({ module: { noParse: /\/netlify-cms\/dist\/cms.js$/ }})
+  return config
+}
