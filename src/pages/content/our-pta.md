@@ -5,8 +5,6 @@ title: Our PTA
 description: Our PTA
 date: '2018-07-26T00:20:02-04:00'
 ---
-Hello
-
 President: LaFleur Cumberbatch\
 Vice President: Amanda Brokaw\
 Secretary: Tyeast Fullerton\
